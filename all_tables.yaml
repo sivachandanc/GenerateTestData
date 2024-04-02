@@ -1,0 +1,714 @@
+seed: 1209
+tables:
+  rx_claims:
+    rows: 1000
+    save_to_local:
+    - false
+    - local_location: ''
+    save_to_databricks:
+    - false
+    - databricks_table: ''
+    columns:
+    - name: patient_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_gender
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_birth_year
+      data_type: IntegerType
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_range:
+      - 1
+      - 100
+      constraint_distinct: false
+      constraint_constants: []
+    - name: carrier_operational_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_claim_header_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: false
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_claim_header_source_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: transaction_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: first_serviced_dte
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: last_serviced_dte
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: record_type
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: claim_record_sequence_number
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_qualifier_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: place_of_service_cde
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_01
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_02
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_03
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_04
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_status_cde
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_npi_number
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_first_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_middle_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_last_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_name_suffix_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_professional_title_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_street_addr_line_1_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_street_addr_line_2_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_city_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_state_or_province_cde
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_zip_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_fax_nbr
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_phone_nbr
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: lob
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: source_ind
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: load_batch_nbr
+      data_type: LongType
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_range:
+      - 1
+      - 100
+      constraint_distinct: false
+      constraint_constants: []
+    - name: warehouse_tms
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: paid_date
+      data_type: DateType
+      constraint_nulls: 0
+      constraint_nullable: false
+      constraint_range:
+      - '1800-01-01'
+      - '2024-01-01'
+      constraint_distinct: false
+      constraint_constants: []
+    - name: claim_format_ty_cd
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: msc_cd
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: line_process_event_cd
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: indiv_entpr_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: client_restriction_key
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_name
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+  mx_claims:
+    rows: 1000
+    save_to_local:
+    - false
+    - local_location: ''
+    save_to_databricks:
+    - false
+    - databricks_table: ''
+    columns:
+    - name: patient_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_gender
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_birth_year
+      data_type: IntegerType
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_range:
+      - 1
+      - 100
+      constraint_distinct: false
+      constraint_constants: []
+    - name: carrier_operational_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_claim_header_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: false
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_claim_header_source_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: transaction_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: first_serviced_dte
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: last_serviced_dte
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: record_type
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: claim_record_sequence_number
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: medical_qualifier_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: place_of_service_cde
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_01
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_02
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_03
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: cpt_modifier_code_04
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_status_cde
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_npi_number
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_first_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_middle_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_last_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_name_suffix_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_professional_title_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_street_addr_line_1_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_street_addr_line_2_txt
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_city_nme
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_state_or_province_cde
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_zip_code
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_fax_nbr
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_phone_nbr
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: lob
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: source_ind
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: load_batch_nbr
+      data_type: LongType
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_range:
+      - 1
+      - 100
+      constraint_distinct: false
+      constraint_constants: []
+    - name: warehouse_tms
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: paid_date
+      data_type: DateType
+      constraint_nulls: 0
+      constraint_nullable: false
+      constraint_range:
+      - '1800-01-01'
+      - '2024-01-01'
+      constraint_distinct: false
+      constraint_constants: []
+    - name: claim_format_ty_cd
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: msc_cd
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: line_process_event_cd
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: indiv_entpr_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: client_restriction_key
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: provider_name
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []

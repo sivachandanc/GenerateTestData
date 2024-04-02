@@ -1,0 +1,453 @@
+{
+    'rows': 1000,
+    'save_to_local': [
+        False,
+        {
+            'local_location': ''
+        }
+    ],
+    'save_to_databricks': [
+        False,
+        {
+            'databricks_table': ''
+        }
+    ],
+    'columns': [
+        {
+            'name': 'patient_id',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': ['@']
+        },
+        {
+            'name': 'patient_gender',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'patient_birth_year',
+            'datatype': 'IntegerType',
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_range': [
+                1,
+                100
+            ],
+            'constraint_distinct': False,
+            'constraint_constants': []
+        },
+        {
+            'name': 'carrier_operational_id',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'medical_claim_header_id',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': False,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'medical_claim_header_source_code',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'transaction_code',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'first_serviced_dte',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'last_serviced_dte',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'record_type',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'claim_record_sequence_number',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'medical_code',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'medical_qualifier_code',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'place_of_service_cde',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'cpt_modifier_code_01',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'cpt_modifier_code_02',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'cpt_modifier_code_03',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'cpt_modifier_code_04',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'patient_status_cde',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_npi_number',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_first_nme',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_middle_nme',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_last_nme',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_name_suffix_txt',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_professional_title_txt',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_street_addr_line_1_txt',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_street_addr_line_2_txt',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_city_nme',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_state_or_province_cde',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_zip_code',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_fax_nbr',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_phone_nbr',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'lob',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'source_ind',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'load_batch_nbr',
+            'datatype': 'LongType',
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_range': [
+                1,
+                100
+            ],
+            'constraint_distinct': False,
+            'constraint_constants': []
+        },
+        {
+            'name': 'warehouse_tms',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'paid_date',
+            'datatype': 'DateType',
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_range': [
+                1,
+                100
+            ],
+            'constraint_distinct': False,
+            'constraint_constants': []
+        },
+        {
+            'name': 'claim_format_ty_cd',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'msc_cd',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'line_process_event_cd',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'indiv_entpr_id',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'client_restriction_key',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        },
+        {
+            'name': 'provider_name',
+            'datatype': 'StringType',
+            'constraint_length': 5,
+            'constraint_nulls': 0,
+            'constraint_nullable': True,
+            'constraint_constants': [],
+            'constraint_distinct': False,
+            'constraint_special_chars': []
+        }
+    ]
+}

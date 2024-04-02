@@ -1,0 +1,64 @@
+seed: 1209
+tables:
+  rx_claims:
+    rows: 10
+    save_to_local:
+    - false
+    - local_location: ''
+    save_to_databricks:
+    - false
+    - databricks_table: ''
+    columns:
+    - name: patient_id
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: []
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_gender
+      data_type: StringType
+      constraint_length: 5
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_constants: ['Male','Female']
+      constraint_distinct: false
+      constraint_special_chars: []
+    - name: patient_birth_year
+      data_type: LongType
+      constraint_nulls: 0
+      constraint_nullable: true
+      constraint_range:
+      - 1
+      - 100
+      constraint_distinct: false
+      constraint_constants: [1996,2004]
+    - name: patient_decimal
+      data_type: DecimalType
+      constraint_nulls: 0
+      constraint_decimal_range: [1,4]
+      constraint_nullable: true
+      constraint_range:
+      - 1.0
+      - 100.0
+      constraint_distinct: false
+      constraint_constants: []
+    - name: paid_date
+      data_type: DateType
+      constraint_nulls: 0
+      constraint_nullable: false
+      constraint_range:
+      - '1800-01-01'
+      - '2024-01-01'
+      constraint_distinct: false
+      constraint_constants: []
+    - name: paid_time
+      data_type: TimeStampType
+      constraint_nulls: 0
+      constraint_nullable: false
+      constraint_range:
+      - '1800-01-01 00:00:00:00000'
+      - '2024-01-01 00:00:00:00000'
+      constraint_distinct: false
+      constraint_constants: []
